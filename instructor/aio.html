@@ -354,7 +354,7 @@
         
 <section id="aio-01-introduction"><p>Content from <a href="01-introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2024-06-27 |
+<p>Last updated on 2024-07-02 |
         
         <a href="https://github.com/cms-opendata-workshop/workbench-template-md/edit/main/episodes/01-introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -508,8 +508,7 @@ of their page on the portal. Can you locate where the DOI is shown for
 this dataset, Record 30521, <a href="https://opendata.cern.ch/record/30521" class="external-link">DoubleEG primary dataset in
 NANOAOD format from RunG of 2016
 (/DoubleEG/Run2016G-UL2016_MiniAODv2_NanoAODv9-v1/NANOAOD)</a></p>
-<p>Image here from assets/img/portal_screenshot_DOI_example.png</p>
-<p>With a DOI, you can create citations to any of these records, for
+<figure><img src="../fig/portal_screenshot_cms_2016_doubleeg_nanoaod.png" class="figure mx-auto d-block"></figure><p>With a DOI, you can create citations to any of these records, for
 example using a tool like <a href="https://www.doi2bib.org" class="external-link">doi2bib</a>.</p>
 </div>
 </div>
@@ -700,7 +699,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-03-what-data-is-available"><p>Content from <a href="03-what-data-is-available.html">What data and Monte Carlo are available?</a></p>
 <hr>
-<p>Last updated on 2024-06-27 |
+<p>Last updated on 2024-07-02 |
         
         <a href="https://github.com/cms-opendata-workshop/workbench-template-md/edit/main/episodes/03-what-data-is-available.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -880,7 +879,7 @@ analysis when using Run 1 data.</li>
 from Run 2 data on.</li>
 <li>
 <strong>NANOAOD</strong> is slimmed-down version of MINIAOD, and, in
-conrast to all other formats above, does not require CMS-specific
+contrast to all other formats above, does not require CMS-specific
 software for analysis.</li>
 </ul>
 </div>
@@ -963,8 +962,8 @@ left bar.</p>
 </div>
 <p>There are a lot of Monte Carlo samples! It’s up to you to determine
 which ones might contribute to your analysis. The names try to give you
-some sense of the primary process, subsequent decays, the beam energy
-and specific simulation software (e.g. Pythia), but if you have
+some sense of the primary process, subsequent decays, the collision
+energy and specific simulation software (e.g. Pythia), but if you have
 questions, reach out to the organizers. <!-- through 
 [Mattermost](https://mattermost.web.cern.ch/cmsodws2022/channels/town-square). --></p>
 <p>As with the collision data, here are three (3) parts to the names,
@@ -979,10 +978,10 @@ boson which then couples to two leptons. The <em>M-120To200</em> refers
 to a selection that has been imposed requiring the mass of the di-lepton
 pair to be between 120 and 200 50 GeV/c^2. <em>TuneCP5</em> refers to
 the the set of CMS underlying-event parameters of PYTHIA8 event
-generator. <em>13TeV</em> is the beam energy used in the simulation, the
-remaining fields tell us what software was used to generate this
-(<em>powheg</em> for event generation and <em>pythia8</em> for
-hadronization).</p>
+generator. <em>13TeV</em> is the center-of-mass energy of the collision
+used in the simulation, the remaining fields tell us what software was
+used to generate this (<em>powheg</em> for event generation and
+<em>pythia8</em> for hadronization).</p>
 <p><strong>Processing and Global tag</strong></p>
 <p><em>RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1</em>
 refers to how and when this Monte Carlo was processed. The details are
@@ -1047,10 +1046,10 @@ the search, and increase the number of results per page. It will make
 the search slower.</p>
 <p>To search a string in the record title use, for example:</p>
 <ul>
-<li><code>title.tokens:*GluGluHToGG*</code></li>
-<li><code>title.tokens:*DYToMuMu*</code></li>
-<li><code>title.tokens:*sherpa*</code></li>
-<li><code>title.tokens:*flat*</code></li>
+<li><code>GluGluHToGG*</code></li>
+<li><code>DYToMuMu*</code></li>
+<li><code>*sherpa*</code></li>
+<li><code>*flat*</code></li>
 </ul>
 <figure><img src="../fig/portal_screenshot_search_cms_2016_mc_nanoaodsim_dytomumu.png" class="figure mx-auto d-block"></figure><div id="callout5" class="callout">
 <div class="callout-square">
@@ -1088,7 +1087,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-04-cli-through-cernopendata-client"><p>Content from <a href="04-cli-through-cernopendata-client.html">How to access metadata on the command line?</a></p>
 <hr>
-<p>Last updated on 2024-06-27 |
+<p>Last updated on 2024-07-02 |
         
         <a href="https://github.com/cms-opendata-workshop/workbench-template-md/edit/main/episodes/04-cli-through-cernopendata-client.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -1196,7 +1195,7 @@ dataset, use the following (<code>recid</code> of this dataset is
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-i</span> <span class="at">-t</span> <span class="at">--rm</span> docker.io/cernopendata/cernopendata-client  get-file-locations <span class="at">--recid</span> 30563 <span class="at">--protocol</span> xrootd <span class="op">&gt;</span> files-recid-30504.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-i</span> <span class="at">-t</span> <span class="at">--rm</span> docker.io/cernopendata/cernopendata-client  get-file-locations <span class="at">--recid</span> 30563 <span class="at">--protocol</span> xrootd <span class="op">&gt;</span> files-recid-30563.txt</span></code></pre>
 </div>
 <div id="explore-other-metadata-fields" class="callout prereq">
 <div class="callout-square">
@@ -1308,7 +1307,7 @@ Carlo data record. What are the differences? What is the same?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The data records have a “Luminosity” block with some beam related
 information whereas MC records have a “Runs” block with event generation
@@ -1465,7 +1464,7 @@ elements. What do you observe?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Find the type with</p>
 <div class="codewrapper sourceCode" id="cb12">
