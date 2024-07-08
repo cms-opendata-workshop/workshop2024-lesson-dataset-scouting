@@ -20,7 +20,8 @@ that can be accessed without CMS-specific software using ROOT or python tools.
 
 ## NANOAOD variable list
 
-Each NANOAOD dataset has the variable list with a brief description attached to the portal record.
+Each NANOAOD dataset has the variable list with a brief description attached to the portal record. You will learn more about the
+variables for different types of physics objects in the [Physics Objects lesson](https://cms-opendata-workshop.github.io/workshop2024-lesson-physics-objects/instructor/index.html)
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
@@ -213,7 +214,13 @@ This is what you will see:
 
 If you've chosen another dataset or another file, it will look different.
 
+:::::::::::::::::::::::::: challenge
 
+## Homework: complete the homework form!
+
+Please visit the [assignment form](https://docs.google.com/forms/d/e/1FAIpQLSdxsc-aIWqUyFA0qTsnbfQrA6wROtAxC5Id4sxH08STTl8e5w/viewform) and answer some questions about navigating the Open Data Portal to find Open Data. You need to sign in and <strong style="color: red;">click on the submit button</strong> in order to save your work.  You can go back to edit the form at any time.
+
+::::::::::::::::::::::::::::::::
 
 :::::: keypoints
 - It's useful to inspect the files before diving into the full analysis.
